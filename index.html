@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 3</title>
+</head>
+<body>
+    <h2>Câu 1: Bài tập về iframe</h2>
+    <p><b>Yêu cầu: </b>Vào trang google map, tìm 1 địa điểm yêu thích và nhúng thẻ iframe của google map vào website. Để hiển thị được như sau:</p>
+    <p><b>Lưu ý: </b>Thử tự lên google tìm hiểu cách nhúng bản đồ vào website.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4855345740852!2d105.52487561488306!3d21.013249986006734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345b465a4e65fb%3A0xaae6040cfabe8fe!2sFPT%20University!5e0!3m2!1sen!2s!4v1676769743257!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.bing.com/" name="web_bing" width="1000" height="600"></iframe>
+    <a href="https://www.coolmate.me/" target="web_bing">Coolmate</a>
+
+    <h2>Câu 2: Bài tập về form</h2>
+    <p><b>Yêu cầu: </b>Tạo form <b>đăng ký</b> như form bên dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào thẻ label thì phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung mới cho Đăng ký.</p>
+    <form action="" method="POST" >
+        <label for="fullName">Họ tên:</label>
+        <br>
+        <input type="text" id="fullName" name="hoTen" placeholder="Ví dụ: levana" required>
+    </form>
+    <form action="" method="GET">
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email" name="email" placeholder="Ví dụ: levana@gmail.com" required>
+    </form>
+    <form action="POST">
+        <label for="password">Mật khẩu:</label>
+        <br>
+        <input type="password" id="password" required>
+    </form>
+    <p><b>Yêu cầu: </b>Tạo form <b>tìm kiếm</b> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm Tìm kiếm.)</p>
+    <form action="" method="GET">
+        <input type="text" name="ketQua" placeholder="Nhập nội dung tìm kiếm...">
+        <input type="submit" value="Tìm kiếm">
+    </form>
+
+    <h2>Câu 3: Bài tập để ôn lại kiến thức về form</h2>
+    <p><b>Yêu cầu: </b>Vẽ lại các thẻ dưới đây</p>
+    <p><b>-Thẻ input:</b></p>
+    <form action="" method="GET">
+        <label for="kieu_text">Kiểu text:</label>
+        <br>
+        <input type="text" id="kieu_text" placeholder="Nhập họ tên...">
+    </form>
+    <br>
+    <form action="" method="GET">
+        <label for="kieu_email">Kiểu email:</label>
+        <br>
+        <input type="email" id="kieu_email" placeholder="Nhập email">
+    </form>
+    <br>
+    <form action="" method="POST">
+        <label for="kieu_pw">Kiểu password:</label>
+        <br>
+        <input type="password" id="kieu_pw">
+    </form>
+    <br>
+    <form action="" method="GET">
+        <label for="kieu_number">Kiểu number:</label>
+        <br>
+        <input type="number" id="kieu_number">
+    </form>
+    <br>
+    <form action="" method="GET">
+        <label for="kieu_date">Kiểu date:</label>
+        <br>
+        <input type="date" id="kieu_date">
+    </form>
+    <br>
+    <form action="" method="GET">
+        <label for="kieu_time">Kiểu time:</label>
+        <br>
+        <input type="time" id="kieu_time">
+    </form>
+    <br>
+    <form action="">
+        <label for="kieu_file">Kiểu file:</label>
+        <br>
+        <input type="file">
+    </form>
+    <br>
+    <form action="">
+        <label for="kieu_radio">Kiểu radio:</label>
+        <br>
+        <input type="radio" name="sex" value="Nam">Nam
+        <br>
+        <input type="radio" name="sex" value="Nữ">Nữ
+        <br>
+        <input type="radio" name="sex" value="Khác">Khác
+        <br>
+    </form>
+    <br>
+    <form action="">
+        <label for="kieu_range">Kiểu range: <br>Âm lượng(min=0 và max=100)</label>
+        <br>
+        <input id="kieu_range" type="range" min="0" max="100">
+    </form>
+    <br>
+    <form action="">
+        <label for="kieu_color">Kiểu color:</label>
+        <br>
+        <input type="color" name="color" id="kieu_color">
+    </form>
+    <br>
+    <b>-Thẻ select:</b>
+    <form action="">
+        <label for="the_select">Chọn danh mục:</label>
+        <br>
+        <select>
+            <option value="quần">Quần</option>
+            <option value="áo">Áo</option>
+            <option value="mũ">Mũ</option>
+            <option value="khăn">Khăn</option>
+        </select>
+    </form>
+    <br>
+    <b>-Thẻ textarea (có cols=30 và rows=10):</b>
+    <form action="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    
+    <p>
+        <b>Bài tập - vẽ bảng</b>
+    </p>
+    <table>
+        <h2>Đăng kí Thành viên</h2>
+        <tbody>
+            <tr>
+                <td><label for = "ten">Họ tên:</label></td>
+                <td><input type = "text" name = "ten" id = "ten" placeholder="Vui lòng nhập Họ tên" required> </td>
+            </tr>
+            <tr>
+                <td><label for = "mk">Mật khẩu:</label></td>
+                <td><input type = "password" name = "mk" id = "mk" placeholder="Vui lòng nhập Mật khẩu" required> </td>
+            </tr>
+            <tr>
+                <td><label for = "gioitinh">Giới tính:</label></td>
+                <td>
+                    <input type = "radio" name = "man" id = "man" value = "Nam"> Nam
+                    <input type = "radio" name = "woman" id = "woman" value = "Nũ"> Nữ
+                    <input type = "radio" name = "lgbt" id = "lgbt" value = "Khác"> Khác
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích:</td>
+                <td>
+                    <input type = "checkbox" name = "sothich" id = "xemphim" value = "xemphim" > Xem phim
+                    <br>
+                    <input type = "checkbox" name = "sothich" id = "docsach" value = "docsach" > Đọc sách
+                    <br>
+                    <input type = "checkbox" name = "sothich" id = "nghenhac" value = "nghenhac" > Nghe nhạc
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for = "tuoi">Tuổi:</label></td> 
+                <td>
+                    <input type = "number" name = "tuoi" id = "tuoi"> 
+                </td>
+            </tr>
+            
+            <tr>
+                 <td><label for = "tim">Từ khóa tìm kiếm:</label></td> 
+                <td>
+                    <input type = "text" name = "tim" id = "tim"> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for = "gt">Giới thiệu bản thân:</label></td> 
+               <td>
+                    <textarea rows = 10 cols = 100></textarea>
+               </td>
+           </tr>
+            <tr>
+                 <td><label for = "tim">Từ khóa tìm kiếm:</label></td> 
+                <td>
+                    <input type = "text" name = "tim" id = "tim"> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for = "gmail">Email có thể liên hệ:</label></td> 
+               <td>
+                   <input type = "email" name = "gmail" id = "gmail"> 
+               </td>
+           </tr>
+           <tr>
+                <td><label for = "add">Địa chỉ web của bạn:</label></td> 
+                <td>
+                    <input type = "text" name = "add" id = "add"> 
+                </td>
+            </tr>
+            <tr>
+                 <td><label for = "sdt">Từ khóa tìm kiếm:</label></td> 
+                <td>
+                    <input type = "number" name = "sdt" id = "sdt"> 
+                </td>
+            </tr>
+            <tr>
+
+                <td>Các loại chọn Thời gian</td>
+                <td>
+                    <p><h3>Ngày tháng</h3></p>
+                    <div>
+                        <label for = "date">Chọn ngày:</label>
+                        <input type = "date" name = "chonngay" id = "date"> 
+                    </div>
+                        
+                    <div>
+                        <label for = "date">Chọn tháng:</label>
+                        <input type = "month" name = "chonthang" id = "month"> 
+                    </div>
+                    <div>
+                        <label for = "date">Chọn tuần:</label>
+                        <input type = "week" name = "chonnam" id = "week"> 
+                    </div>
+                    <p><h3>Giờ</h3></p>
+                    <div>
+                        <label for = "hour">Chọn giờ:</label>
+                        <input type = "time" name = "chongio" id = "hour"> 
+                    </div>
+                    <div>
+                        <label for = "hour2">Chọn cả Ngày + Giờ:</label>
+                        <input type = "datetime-local" name = "chon2" id = "hour2"> 
+                    </div>
+
+                </td> 
+           </tr>
+           <tr>
+                <td>Màu yêu thích:</td>
+                <td><input name = "color" id = "color" type = "color"> </td>
+                
+           </tr>
+           <tr>
+                <td>Bạn đang sinh sống ở TP.Tỉnh nào?:</td>
+                <td><input type = "text" name = "tp" id = "tp"> </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+</body>
+</html>
